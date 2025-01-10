@@ -1,0 +1,71 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px 20px 30px;
+  background-color: #ffffff;
+  min-width: 100%;
+}
+
+.navbar-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.navbar-title::first-letter {
+  text-transform: uppercase;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-icons svg {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-icons svg:hover {
+  color: #555;
+}
+
+.menu-icon {
+  background: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 20px;
+  display: block; /* Default display for mobile */
+  height: 50px;
+  width: 50px;
+  padding: 15px;
+}
+
+.menu-icon svg {
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+/* Hide the menu icon on non-mobile views */
+@media screen and (min-width: 900px) {
+  .menu-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar-title {
+    display: none;
+  }
+  .navbar-icons svg {
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+  }
+  .navbar-icons {
+    gap: 10px;
+  }
+}
