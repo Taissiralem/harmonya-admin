@@ -9,16 +9,16 @@ import { PiMedal } from "react-icons/pi";
 import { SidebarLink } from "../types/SidebarLink";
 
 export const sidebarLinks: SidebarLink[] = [
-  { section: "Statistique" },
+  { section: "Statistiques" },
   { label: "general", path: "/general", icon: <FaHome size={20} /> },
   { label: "Users", path: "/users", icon: <MdDashboard size={20} /> },
   { label: "Magasins", path: "/magasins", icon: <IoMdStats size={20} /> },
 
-  { section: "Abonnement" },
-  { label: "Boost", path: "/boost", icon: <FaCalendarAlt size={20} /> },
+  { section: "Abonnements" },
+  { label: "Boosts", path: "/boosts", icon: <FaCalendarAlt size={20} /> },
   {
-    label: "Abonnement",
-    path: "/abonnement",
+    label: "Abonnements",
+    path: "/abonnements",
     icon: <LiaPencilRulerSolid size={26} />,
     customStyle: {
       paddingLeft: "0",
@@ -26,19 +26,22 @@ export const sidebarLinks: SidebarLink[] = [
       transform: "translateX(-3px)",
     },
   },
-  { section: "Publicité" },
-
-
-  { section: "Paramètre" },
+  { section: "Publicités" },
   {
-    label: "Catégorie",
-    path: "/categorie",
-    icon: <PiMedal size={24} />,
-    customStyle: { paddingLeft: "0", gap: "13px" },
+    label: "Pub et pub mobile",
+    path: "/Pubs",
+    icon: <LiaPencilRulerSolid size={26} />,
+    customStyle: {
+      paddingLeft: "0",
+      gap: "10px",
+      transform: "translateX(-3px)",
+    },
   },
+
+  { section: "Paramètres" },
   {
-    label: "Sous Catégorie",
-    path: "/sousCategorie",
+    label: "Catégories & sous-catégories",
+    path: "/categories",
     icon: <PiMedal size={24} />,
     customStyle: { paddingLeft: "0", gap: "13px" },
   },
@@ -48,8 +51,8 @@ export const sidebarLinks: SidebarLink[] = [
     icon: <HiOutlineBookOpen size={20} />,
   },
   {
-    label: "Push notification",
-    path: "/addNotification",
+    label: "Push notifications",
+    path: "/addNotifications",
     icon: <BsSuitcaseLg size={20} />,
   },
 ];

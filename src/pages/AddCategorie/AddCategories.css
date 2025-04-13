@@ -1,0 +1,23 @@
+.input-file-img {
+  width: 100px !important;
+  margin-top: 2vh;
+  border: 1px dashed #4f4e4e !important;
+  display: none;
+}
+.label-file-img {
+  width: 240px !important;
+  height: 90px !important;
+  border-radius: 18px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 2vh;
+  margin-right: 25px;
+  border: 2.5px dashed #00000042 !important;
+}
+
+.input-container {
+  position: relative;
+}

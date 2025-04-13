@@ -1,0 +1,18 @@
+.input-container22 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-container22 h1 {
+  width: 40%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  height: 90px;
+  border-radius: 10px;
+  padding: 21px;
+}
+
+.input-container input[type="date"] {
+  height: 90px !important;
+}

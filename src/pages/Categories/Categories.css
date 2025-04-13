@@ -1,0 +1,51 @@
+.category-container {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  font-family: sans-serif;
+}
+
+.category-column {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px 0;
+  width: 20vw;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.category-item:hover {
+  background-color: #f0f0f0;
+}
+
+.category-item.active {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+.add-category {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  right: 45px;
+  bottom: 45px;
+}
+
+.add-category button {
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
