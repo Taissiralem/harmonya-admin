@@ -143,8 +143,12 @@ export default function Addcategory() {
             <IoArrowForward />
           </button>
 
-          <div className="Title-button">
+          <div
+            className="Title-button"
+            style={{ justifyContent: "flex-start", gap: "0.7vw" }}
+          >
             <h2>Ajouter une Sous-Catégorie</h2>
+            <span>(Vous devez ajouter au moins 1)</span>
           </div>
 
           {subCategories.map((sub, index) => (
@@ -232,7 +236,7 @@ export default function Addcategory() {
               <span style={{ fontSize: "1.5rem", marginRight: "0.5rem" }}>
                 +
               </span>{" "}
-              Ajouter une sous-catégorie
+              Ajouter une sous-catégorie{" "}
             </button>
           </div>
         </form>
